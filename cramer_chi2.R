@@ -10,7 +10,7 @@ library(rstatix)
 #' @return Un dataframe contenant les paires de variables, leur p-value de chi2 et leur V de Cramer correspondant.
 #'
 #' @note Le V de Cramer est une mesure de l'association entre deux variables catégorielles.
-#' NB : les variables doivent être en factor.
+#' NB : les variables doivent être converties en factor.
 
 Table.Cramer.chi2 <- function(data) {
   vars <- names(data)
